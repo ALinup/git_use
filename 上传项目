@@ -1,0 +1,18 @@
+1、下载git
+https://git-scm.com/download
+打开git bash，设置用户名和电子邮箱：
+git config --global user.name “你的用户名”     
+git config --global user.email “你的电子邮箱”
+
+2、创建仓库，记住https地址
+
+3、在本地创建仓库文件夹，将需要上传的文件和文件夹放到此处
+
+4、在本地仓库文件夹中右键打开git bash，然后在命令行输入git init即可把该目录变成可以使用git管理的目录
+
+5、上传文件
+git add .
+git commit -m "blog"   //引号中的内容为对该文件的描述
+git remote add origin https地址
+git push -u origin master
+如果没有异常，会等待几秒，然后跳出一个让你输入 Username 和 Password 的窗口，输人github的登录账号和密码即可开始上传。
